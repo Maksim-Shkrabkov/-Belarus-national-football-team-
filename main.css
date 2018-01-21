@@ -1,0 +1,3790 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+@media screen and (min-width: 1070px) {
+
+/* Общее для всей страницы */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Стилизация header */
+
+header {
+    background: linear-gradient(to bottom, #fefeff 0%, #ff0000 50%, #ffffff 100%)
+}
+
+.header-top {
+    overflow: hidden;
+    height: 408px;
+    background: url('img/logo.png') 50% 50% no-repeat;
+}
+
+/* Кнопка вверх на сайте */
+ 
+.top-bookmarker img {
+    position: fixed;
+    right: 0.1%;
+    opacity: 0.2;
+    cursor: pointer;
+    z-index: 10000;
+}
+    
+/* Стилизация формы в меню */
+
+.login {
+    float: right;
+    width: 200px;
+    margin: 20px;
+    padding:15px 20px;
+    background: #2f2f2f;
+    border-radius: 5px;
+}
+
+.login label {
+    display: block;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.login label:first-child {
+    margin-top:0;
+}
+
+.login input[type="text"], .login input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.login input[type="text"]:focus, .login input[type="password"]:focus{
+    box-shadow:0 0 50px rgba(50, 200, 255, 0.5);
+    outline:none;
+}
+
+
+.login input[type="submit"] {
+    display: block;
+    margin-top: 1em;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+
+/* Стилизация меню */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+
+/* Внешний вид меню */
+
+nav {
+    float: left;
+    width: 200px;
+    margin: 20px;
+}
+
+.menu a {
+    background: #2f2f2f;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: solid 1px #666;
+    transition: 0.5s all;
+}
+
+.menu a:hover {
+    background: #666;
+    padding: 10px 0 10px 20px;
+}
+
+.menu li:first-child a{
+    border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a{
+    border-radius: 0 0 3px 3px;
+}
+
+/* Всплывающее меню */
+
+.menu-list {
+    position: relative;
+}
+
+.menu-drop {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top:-9999em;
+    opacity: 0;
+    transition: 0.5s opacity;
+    border-left: 10px solid transparent;
+}
+
+.menu-list:hover .menu-drop {
+    opacity: 1;
+    top: 0;
+}
+
+/* Иконки для всплывающих менюшек */
+
+.menu-list::after {
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent #eee;
+    top: 1em;
+    right: 0.7em;
+}
+
+.menu-list:hover::after {
+    transform: scaleX(-1)
+}
+
+
+/* Преимущества сайта */
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ffe4c4;
+    margin: 5px 0;
+}
+
+.feature-item {
+    border-left: 1px solid #d9d9d9;
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+    
+}
+
+.feature-item:first-child {
+    border-left: none;
+}
+
+.feature-title {
+    color: #40352d;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    line-height: 30px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Блок новостей */
+
+.news {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.news-one, .news-two, .news-three {
+    flex: 1 1 100px;
+    background-color: #ffe4c4;
+}
+
+.news-one:hover, .news-two:hover, .news-three:hover {
+    flex: 1 1 100px;
+    background-color: #f7ba71;
+    cursor: pointer;
+}
+
+.news-one img, .news-two img, .news-three img {
+    width: 100%;
+}
+
+.news-one h, .news-two h, .news-three h {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+}
+
+.news-one p, .news-two p, .news-three p {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.news-one:hover span, .news-two:hover span, .news-three:hover span {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.news-one span, .news-two span, .news-three span {
+    display: none;
+} 
+
+
+
+/* Стилизация страницы сборной и тренерского штаба */
+
+.team {
+    font-size: 20px;
+    margin: 0px auto;
+    padding: 15px 30px;
+    background-color: bisque;
+    border-bottom: 1px solid black;
+}
+
+.team summary {
+    background-color: #f8d2a5;
+    font-family: 'Lobster', cursive; 
+}
+
+.team summary:hover {
+    background-color: #f7ba71;
+    transform: scale(1.006);
+    cursor: pointer;
+}
+
+
+
+/* Стилизация блоков голкиперов, защитников, полузащитников, нападающих и тренерского штаба */
+
+.team .goalkeepers, .team .defenders, .team .midfielders, .team .forwards {
+    overflow: hidden;
+}
+
+
+.team .goalkeeper, .team .defender, .team .midfielder, .team .forward  {
+    display: inline-block;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    background-color: coral;
+}
+
+
+/* Стилизация таблицы информации по игрокам всех амплуа */
+
+.info-about-players {
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.info-about-players  tr:nth-child(odd) {
+    background-color: dimgray;
+    color: #fdfbf9;
+}
+
+/* Стилизация блоков защитников, полузащитников, нападающих и тренерского штаба (цвет фона и SVG) */
+
+.team .defender {
+    background-color: #c33737;
+}
+
+.team .midfielder {
+    background-color: #c4f2b3;
+}
+
+.team .forward {
+    background-color: #d6355a;
+}
+
+
+.info-about-coach p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+    
+.goalkeeper h4::after, .goalkeeper h4::before {
+    content: url('img/SVG/team/little-goalkeeper.svg');
+    padding: 5px;
+}
+    
+.defender h4::after, .defender h4::before {
+    content: url('img/SVG/team/little-defender.svg');
+    padding: 5px;
+}
+
+.midfielder h4::after, .midfielder h4::before {
+    content: url('img/SVG/team/little-midfielder.svg');
+    padding: 5px;
+}
+    
+.forward h4::after, .forward h4::before {
+    content: url('img/SVG/team/little-forward.svg');
+    padding: 5px;
+}
+
+/* Таблица результатов*/
+
+.table-results {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.table-results tbody tr:nth-child(1), .table-results tbody tr:nth-child(2) {
+    background-color: green;
+}
+
+/* Календарь игр*/
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+}
+
+.info-about-winner-group div {
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+    border: solid 1px black;
+    background-color: green;
+    
+}
+
+.info-about-winner-group p {
+    display: inline;
+}
+
+
+/* Стилизация таблицы календаря игр*/
+
+.table-calendar tbody tr:nth-child(5) td:nth-child(3), .table-calendar tbody tr:nth-child(7) td:nth-child(3) {
+    background-color: green;
+}
+
+.table-calendar tbody tr:nth-child(5) td:nth-child(5), .table-calendar tbody tr:nth-child(7) td:nth-child(5)  {
+    background-color: red;
+}
+
+.table-calendar tbody tr:nth-child(6) td:nth-child(5), .table-calendar tbody tr:nth-child(6) td:nth-child(3), .table-calendar tbody tr:nth-child(8) td:nth-child(3), .table-calendar tbody tr:nth-child(8) td:nth-child(5)  {
+    background-color: orange;
+}
+
+/* Стилизация истории сборной*/
+ 
+    
+.history h4 {
+    text-align: center;
+    font: italic bold 20px Arial;
+    text-transform: uppercase; 
+    color: #812301;
+}
+
+.history p {
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+}
+
+.history img:first-of-type {
+    width: 50%;
+    float: left;
+    margin-right: 5px;
+}
+
+.history img:last-of-type {
+    width: 50%;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Стилизация блока обзор*/
+
+.overview {
+    display: flex;
+    background-color: #ffd39f;
+}
+
+.video-overview, .text-overview {
+    padding: 2px;
+}
+
+.video-overview_header, .text-overview_header {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.text-overview {
+    overflow: scroll;
+    height: 357px;
+}
+
+.table-overview {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    vertical-align: middle;
+}
+
+.table-overview-time, .table-overview-icon, .table-overview-info {
+    border-bottom: 1px solid  #504848;
+}
+
+.table-overview-info img {
+    max-width: 100%;
+}
+
+
+/* Стилизация блока билеты*/
+
+.ticket {
+    min-height: 808px;
+    background-color: #ffcb8e;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    background-color: #deb887;
+}
+
+.tab > input {
+	display: none;
+}
+
+.tab > label {
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	background: #333;
+	color: #f7ba71;
+	margin-right: 5px;
+	border-radius: 5px 5px 0 0;
+	transition: background-color 1s;
+}
+
+.tab-content {
+	clear: both;
+}
+
+.tab-content > div {
+	background: #ffcb8e;
+    color: #000000;
+    font-family: 'Exo 2', sans-serif;
+    width: 100%;
+	position: absolute;
+	padding: 10px;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#tab-1:checked ~ .tab-content > div:nth-of-type(1) {
+	opacity: 1;
+}
+#tab-2:checked ~ .tab-content > div:nth-of-type(2) {
+	opacity: 1;
+}
+#tab-3:checked ~ .tab-content > div:nth-of-type(3) {
+	opacity: 1;
+}
+#tab-4:checked ~ .tab-content > div:nth-of-type(4) {
+	opacity: 1;
+}
+#tab-5:checked ~ .tab-content > div:nth-of-type(5) {
+	opacity: 1;
+}
+
+.tab > input:checked + label {
+	color: #333;
+	background: #fff;
+}
+
+/* Стилизация контента вкладок*/
+
+.tab-content {
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.tab-button {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #fff;
+    padding: 6px 12px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow:0 0 50px rgba(50, 200, 255, 1);
+}
+    
+.tab-content-3 img {
+    display: block;
+    margin: auto;
+}
+
+.tab-content-4 iframe {
+    display: block;
+    margin: auto;
+}
+
+.tab-content-5 ul {
+    list-style-type: square
+}
+
+/* team-form */
+
+.team-form {
+    display: flex;
+    background-color: #ffcb8e;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.team-form_photo, .team-form_shop {
+    flex: 1 1 100px;
+}
+
+.team-form_photo {
+    position: relative;
+    padding-top: 4px;
+}
+
+.team-form_photo p {
+    position: absolute;
+    top: 384px;
+    left: 118px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive; 
+}
+
+
+.team-form_photo:hover p {
+    transform: scale(1.2);
+    transition: transform 1s ease-out 0.5s;
+    animation: bestform 6s ease-in;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #00ebff;
+    text-shadow: 2px 2px 3px gray;
+    box-shadow: 0 0 20px red inset
+}
+
+@keyframes bestform {
+    from {
+        color: #ff0000;
+    }
+    
+    40% {
+        color: #570101;
+    }
+    
+    80% {
+        color: #ffffff;
+    }
+    to {
+       color: #ff0000;
+    }
+}
+
+
+.team-form_shop {
+    text-align: center;
+}
+
+.team-form_shop img {
+    padding: 4px;
+}
+
+.team-form_shop ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.team-form_shop a {
+    display: block;
+    margin: auto;
+    width: 115px;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.team-form_shop a:hover {
+    background: #333;
+    color: white;
+}
+
+
+/* Footer */
+
+.feedback {
+    font-family: 'Lobster', cursive; 
+    font-size: 19px;
+    background-color: #ffcb8e;
+}
+
+.feedback-form {
+    padding: 5px;
+}
+
+.feedback p{
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+    font-size: 19px;
+    padding: 5px;
+    margin: 0;
+}
+
+.feedback-form-group, .checkbox-area {
+	overflow: hidden;
+	margin: 2px;
+}
+
+
+.feedback-form-group label, .checkbox-area label{
+	display: inline-block;
+	float: left;
+	width: 300px;
+	text-align: right;
+	cursor: pointer;
+	margin-top: 3px;
+}
+
+.feedback-form-group [type=text] {
+	display: inline-block;
+    width: 100%;
+	text-align: left;
+	float: left;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+
+.checkbox-area [type=checkbox] {
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.feedback-form-group select {
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.feedback-form-group textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.feedback-form [type=submit] {
+    display: block;
+    margin:auto;
+    margin-top: 1em;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+.feedback-form [type=submit]:hover {
+    background: #333;
+    color: white;
+}
+
+/* Footer social */
+
+.footer-middle {
+    background-color: #ffcb8e;
+}
+
+.social ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.social li {
+    display: inline-block;
+    width: 19.5%;
+    text-align: center;
+}
+
+.fa {
+    color: black;
+}
+
+@keyframes fontawesomeAround {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fontawesomeColor {
+    from {
+        color: #000000;
+    }
+    
+    20% {
+        color: #0000ff;
+    }
+    
+    40% {
+        color:#7fff00;
+    }
+    
+    60% {
+        color:#3db96d;
+    }
+    
+    80% {
+        color:#b95a3d;
+    }
+    
+    to {
+        color: #000000;
+    }
+}
+
+.fa:hover {
+    color: black;
+    transform: scale(1.3);
+    animation: fontawesomeAround 3s ease-in, fontawesomeColor 3s ease-in;
+}
+
+
+/* Footer bottom */
+
+.commercial {
+    background-color: #000;
+}
+
+
+.commercial a{
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.commercial img {
+    opacity: 0.5;
+}
+
+.commercial img:hover {
+    opacity: 1;
+}
+
+}
+
+
+
+@media screen and (min-width:980px) and (max-width:1070px) {
+    
+/* Общее для всей страницы */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Стилизация header */
+
+header {
+    background: linear-gradient(to bottom, #fefeff 0%, #ff0000 50%, #ffffff 100%)
+}
+
+.header-top {
+    overflow: hidden;
+    height: 408px;
+    background: url('img/logo.png') 50% 50% no-repeat;
+}
+    
+/* Кнопка вверх на сайте */
+ 
+.top-bookmarker img {
+    position: fixed;
+    right: 0.1%;
+    opacity: 0.2;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+
+/* Стилизация формы в меню */
+
+.login {
+    float: right;
+    width: 200px;
+    margin: 20px;
+    padding:15px 20px;
+    background: #2f2f2f;
+    border-radius: 5px;
+}
+
+.login label {
+    display: block;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.login label:first-child {
+    margin-top:0;
+}
+
+.login input[type="text"], .login input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.login input[type="text"]:focus, .login input[type="password"]:focus{
+    box-shadow:0 0 50px rgba(50, 200, 255, 0.5);
+    outline:none;
+}
+
+
+.login input[type="submit"] {
+    display: block;
+    margin-top: 1em;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+
+/* Стилизация меню */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+
+/* Внешний вид меню */
+
+nav {
+    float: left;
+    width: 200px;
+    margin: 20px;
+}
+
+.menu a {
+    background: #2f2f2f;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: solid 1px #666;
+    transition: 0.5s all;
+}
+
+.menu a:hover {
+    background: #666;
+    padding: 10px 0 10px 20px;
+}
+
+.menu li:first-child a{
+    border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a{
+    border-radius: 0 0 3px 3px;
+}
+
+/* Всплывающее меню */
+
+.menu-list {
+    position: relative;
+}
+
+.menu-drop {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top:-9999em;
+    opacity: 0;
+    transition: 0.5s opacity;
+    border-left: 10px solid transparent;
+}
+
+.menu-list:hover .menu-drop {
+    opacity: 1;
+    top: 0;
+}
+
+/* Иконки для всплывающих менюшек */
+
+.menu-list::after {
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent #eee;
+    top: 1em;
+    right: 0.7em;
+}
+
+.menu-list:hover::after {
+    transform: scaleX(-1)
+}
+
+
+/* Преимущества сайта */
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ffe4c4;
+    margin: 5px 0;
+}
+
+.feature-item {
+    border-left: 1px solid #d9d9d9;
+    text-align: center;  
+}
+
+.feature-item:first-child {
+    border-left: none;
+}
+
+.feature-title {
+    color: #40352d;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    line-height: 30px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Блок новостей */
+
+.news {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.news-one, .news-two, .news-three {
+    flex: 1 1 100px;
+    background-color: #ffe4c4;
+}
+
+.news-one:hover, .news-two:hover, .news-three:hover {
+    flex: 1 1 100px;
+    background-color: #f7ba71;
+    cursor: pointer;
+}
+
+.news-one img, .news-two img, .news-three img {
+    width: 100%;
+}
+
+.news-one h, .news-two h, .news-three h {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+}
+
+.news-one p, .news-two p, .news-three p {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.news-one:hover span, .news-two:hover span, .news-three:hover span {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.news-one span, .news-two span, .news-three span {
+    display: none;
+} 
+
+
+
+/* Стилизация страницы сборной и тренерского штаба */
+
+.team {
+    font-size: 20px;
+    margin: 0px auto;
+    padding: 15px 30px;
+    background-color: bisque;
+    border-bottom: 1px solid black;
+}
+
+.team summary {
+    background-color: #f8d2a5;
+    font-family: 'Lobster', cursive; 
+}
+
+.team summary:hover {
+    background-color: #f7ba71;
+    transform: scale(1.006);
+    cursor: pointer;
+}
+
+
+
+/* Стилизация блоков голкиперов, защитников, полузащитников, нападающих и тренерского штаба */
+
+.team .goalkeepers, .team .defenders, .team .midfielders, .team .forwards {
+    overflow: hidden;
+}
+
+
+.team .goalkeeper, .team .defender, .team .midfielder, .team .forward  {
+    display: inline-block;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    background-color: coral;
+}
+
+
+/* Стилизация таблицы информации по игрокам всех амплуа */
+
+.info-about-players {
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.info-about-players  tr:nth-child(odd) {
+    background-color: dimgray;
+    color: #fdfbf9;
+}
+
+/* Стилизация блоков защитников, полузащитников, нападающих и тренерского штаба (цвет фона и SVG) */
+
+.team .defender {
+    background-color: #c33737;
+}
+
+.team .midfielder {
+    background-color: #c4f2b3;
+}
+
+.team .forward {
+    background-color: #d6355a;
+}
+
+
+.info-about-coach p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+    
+.goalkeeper h4::after, .goalkeeper h4::before {
+    content: url('img/SVG/team/little-goalkeeper.svg');
+    padding: 5px;
+}
+    
+.defender h4::after, .defender h4::before {
+    content: url('img/SVG/team/little-defender.svg');
+    padding: 5px;
+}
+
+.midfielder h4::after, .midfielder h4::before {
+    content: url('img/SVG/team/little-midfielder.svg');
+    padding: 5px;
+}
+    
+.forward h4::after, .forward h4::before {
+    content: url('img/SVG/team/little-forward.svg');
+    padding: 5px;
+}
+
+/* Таблица результатов*/
+
+.table-results {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.table-results tbody tr:nth-child(1), .table-results tbody tr:nth-child(2) {
+    background-color: green;
+}
+
+/* Календарь игр*/
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+}
+
+.info-about-winner-group div {
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+    border: solid 1px black;
+    background-color: green;
+    
+}
+
+.info-about-winner-group p {
+    display: inline;
+}
+
+
+/* Стилизация таблицы календаря игр*/
+
+.table-calendar tbody tr:nth-child(5) td:nth-child(3), .table-calendar tbody tr:nth-child(7) td:nth-child(3) {
+    background-color: green;
+}
+
+.table-calendar tbody tr:nth-child(5) td:nth-child(5), .table-calendar tbody tr:nth-child(7) td:nth-child(5)  {
+    background-color: red;
+}
+
+.table-calendar tbody tr:nth-child(6) td:nth-child(5), .table-calendar tbody tr:nth-child(6) td:nth-child(3), .table-calendar tbody tr:nth-child(8) td:nth-child(3), .table-calendar tbody tr:nth-child(8) td:nth-child(5)  {
+    background-color: orange;
+}
+
+/* Стилизация истории сборной*/
+
+.history h4 {
+    text-align: center;
+    font: italic bold 20px Arial;
+    text-transform: uppercase; 
+    color: #812301;
+}
+
+.history p {
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+}
+
+.history img:first-of-type {
+    width: 50%;
+    float: left;
+    margin-right: 5px;
+}
+
+.history img:last-of-type {
+    width: 50%;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Стилизация блока обзор*/
+
+.overview {
+    display: flex;
+    background-color: #ffd39f;
+    flex-direction: column;
+}
+
+.video-overview, .text-overview {
+    text-align: center;
+    padding: 2px;
+    border-bottom: 1px solid black;
+}
+
+.video-overview_header, .text-overview_header {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.text-overview {
+    overflow: scroll;
+    height: 357px;
+}
+
+.table-overview {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    vertical-align: middle;
+}
+
+.table-overview-time, .table-overview-icon, .table-overview-info {
+    border-bottom: 1px solid  #504848;
+}
+
+.table-overview-info img {
+    max-width: 100%;
+}
+
+
+/* Стилизация блока билеты*/
+
+.ticket {
+    min-height: 805px;
+    background-color: #ffcb8e;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    background-color: #deb887;
+}
+
+.tab > input {
+	display: none;
+}
+
+.tab > label {
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	background: #333;
+	color: #f7ba71;
+	margin-right: 5px;
+	border-radius: 5px 5px 0 0;
+	transition: background-color 1s;
+}
+
+.tab-content {
+	clear: both;
+}
+
+.tab-content > div {
+	background: #ffcb8e;
+    color: #000000;
+    font-family: 'Exo 2', sans-serif;
+    width: 100%;
+	position: absolute;
+	padding: 10px;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#tab-1:checked ~ .tab-content > div:nth-of-type(1) {
+	opacity: 1;
+}
+#tab-2:checked ~ .tab-content > div:nth-of-type(2) {
+	opacity: 1;
+}
+#tab-3:checked ~ .tab-content > div:nth-of-type(3) {
+	opacity: 1;
+}
+#tab-4:checked ~ .tab-content > div:nth-of-type(4) {
+	opacity: 1;
+}
+#tab-5:checked ~ .tab-content > div:nth-of-type(5) {
+	opacity: 1;
+}
+
+.tab > input:checked + label {
+	color: #333;
+	background: #fff;
+}
+
+/* Стилизация контента вкладок*/
+
+.tab-content {
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.tab-button {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #fff;
+    padding: 6px 12px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow:0 0 50px rgba(50, 200, 255, 1);
+}
+
+.tab-content-3 img {
+    display: block;
+    margin: auto;
+}
+
+.tab-content-4 iframe {
+    display: block;
+    margin: auto;
+}
+
+.tab-content-5 ul {
+    list-style-type: square
+}
+
+/* team-form */
+
+.team-form {
+    display: flex;
+    background-color: #ffcb8e;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+}
+
+.team-form_photo, .team-form_shop {
+    flex: 1 1 100px;
+}
+
+.team-form_photo {
+    position: relative;
+    padding-top: 4px;
+}
+
+.team-form_photo img {
+    width: 100%;
+}
+    
+.team-form_photo p {
+    position: absolute;
+    top: 500px;
+    left: 118px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive; 
+}
+
+
+.team-form_photo:hover p {
+    transform: scale(1.2);
+    transition: transform 1s ease-out 0.5s;
+    animation: bestform 6s ease-in;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #00ebff;
+    text-shadow: 2px 2px 3px gray;
+    box-shadow: 0 0 20px red inset
+}
+
+@keyframes bestform {
+    from {
+        color: #ff0000;
+    }
+    
+    40% {
+        color: #570101;
+    }
+    
+    80% {
+        color: #ffffff;
+    }
+    to {
+       color: #ff0000;
+    }
+}
+
+
+.team-form_shop {
+    text-align: center;
+}
+
+.team-form_shop img {
+    padding: 4px;
+}
+
+.team-form_shop ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.team-form_shop a {
+    display: block;
+    margin: auto;
+    width: 115px;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.team-form_shop a:hover {
+    background: #333;
+    color: white;
+}
+
+
+/* Footer */
+
+.feedback {
+    font-family: 'Lobster', cursive; 
+    font-size: 19px;
+    background-color: #ffcb8e;
+}
+
+.feedback-form {
+    padding: 5px;
+}
+
+.feedback p{
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+    font-size: 19px;
+    padding: 5px;
+    margin: 0;
+}
+
+.feedback-form-group, .checkbox-area {
+	overflow: hidden;
+	margin: 2px;
+}
+
+
+.feedback-form-group label, .checkbox-area label{
+	display: inline-block;
+	float: left;
+	width: 300px;
+	text-align: right;
+	cursor: pointer;
+	margin-top: 3px;
+}
+
+.feedback-form-group [type=text] {
+	display: inline-block;
+    width: 100%;
+	text-align: left;
+	float: left;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+
+.checkbox-area [type=checkbox] {
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.feedback-form-group select {
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.feedback-form-group textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.feedback-form [type=submit] {
+    display: block;
+    margin:auto;
+    margin-top: 1em;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+.feedback-form [type=submit]:hover {
+    background: #333;
+    color: white;
+}
+
+/* Footer social */
+
+.footer-middle {
+    background-color: #ffcb8e;
+}
+
+.social ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.social li {
+    display: inline-block;
+    width: 19.5%;
+    text-align: center;
+}
+
+.fa {
+    color: black;
+}
+
+@keyframes fontawesomeAround {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fontawesomeColor {
+    from {
+        color: #000000;
+    }
+    
+    20% {
+        color: #0000ff;
+    }
+    
+    40% {
+        color:#7fff00;
+    }
+    
+    60% {
+        color:#3db96d;
+    }
+    
+    80% {
+        color:#b95a3d;
+    }
+    
+    to {
+        color: #000000;
+    }
+}
+
+.fa:hover {
+    color: black;
+    transform: scale(1.3);
+    animation: fontawesomeAround 3s ease-in, fontawesomeColor 3s ease-in;
+}
+
+
+/* Footer bottom */
+
+.commercial {
+    background-color: #000;
+}
+
+
+.commercial a{
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.commercial img {
+    opacity: 0.5;
+}
+
+.commercial img:hover {
+    opacity: 1;
+}
+}
+
+@media screen and (min-width:670px) and (max-width:979px) {
+    
+/* Общее для всей страницы */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Стилизация header */
+
+header {
+    background: linear-gradient(to bottom, #fefeff 0%, #ff0000 50%, #ffffff 100%)
+}
+
+.header-top {
+    overflow: hidden;
+    height: 408px;
+    background: url('img/logo.png') 50% 50% no-repeat;
+}
+   
+/* Кнопка вверх на сайте */
+ 
+.top-bookmarker img {
+    position: fixed;
+    right: 0.1%;
+    opacity: 0.2;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* Стилизация формы в меню */
+
+.login {
+    float: right;
+    width: 200px;
+    margin: 20px;
+    padding:15px 20px;
+    background: #2f2f2f;
+    border-radius: 5px;
+}
+
+.login label {
+    display: block;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.login label:first-child {
+    margin-top:0;
+}
+
+.login input[type="text"], .login input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.login input[type="text"]:focus, .login input[type="password"]:focus{
+    box-shadow:0 0 50px rgba(50, 200, 255, 0.5);
+    outline:none;
+}
+
+
+.login input[type="submit"] {
+    display: block;
+    margin-top: 1em;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+
+/* Стилизация меню */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+
+/* Внешний вид меню */
+
+nav {
+    float: left;
+    width: 200px;
+    margin: 20px;
+}
+
+.menu a {
+    background: #2f2f2f;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: solid 1px #666;
+    transition: 0.5s all;
+}
+
+.menu a:hover {
+    background: #666;
+    padding: 10px 0 10px 20px;
+}
+
+.menu li:first-child a{
+    border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a{
+    border-radius: 0 0 3px 3px;
+}
+
+/* Всплывающее меню */
+
+.menu-list {
+    position: relative;
+}
+
+.menu-drop {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top:-9999em;
+    opacity: 0;
+    transition: 0.5s opacity;
+    border-left: 10px solid transparent;
+}
+
+.menu-list:hover .menu-drop {
+    opacity: 1;
+    top: 0;
+}
+
+/* Иконки для всплывающих менюшек */
+
+.menu-list::after {
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent #eee;
+    top: 1em;
+    right: 0.7em;
+}
+
+.menu-list:hover::after {
+    transform: scaleX(-1)
+}
+
+/* Преимущества сайта */
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ffe4c4;
+    margin: 5px 0;
+}
+
+.feature-item {
+    border-left: 1px solid #d9d9d9;
+    text-align: center;  
+}
+
+.feature-item:first-child {
+    border-left: none;
+}
+
+.feature-title {
+    color: #40352d;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    line-height: 30px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Блок новостей */
+
+.news {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.news-one, .news-two, .news-three {
+    flex: 1 1 100px;
+    background-color: #ffe4c4;
+}
+
+.news-one:hover, .news-two:hover, .news-three:hover {
+    flex: 1 1 100px;
+    background-color: #f7ba71;
+    cursor: pointer;
+}
+
+.news-one img, .news-two img, .news-three img {
+    width: 100%;
+}
+
+.news-one h, .news-two h, .news-three h {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+}
+
+.news-one p, .news-two p, .news-three p {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.news-one:hover span, .news-two:hover span, .news-three:hover span {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.news-one span, .news-two span, .news-three span {
+    display: none;
+} 
+
+
+
+/* Стилизация страницы сборной и тренерского штаба */
+
+.team {
+    font-size: 20px;
+    margin: 0px auto;
+    padding: 15px 30px;
+    background-color: bisque;
+    border-bottom: 1px solid black;
+}
+
+.team summary {
+    background-color: #f8d2a5;
+    font-family: 'Lobster', cursive; 
+}
+
+.team summary:hover {
+    background-color: #f7ba71;
+    transform: scale(1.006);
+    cursor: pointer;
+}
+
+
+
+/* Стилизация блоков голкиперов, защитников, полузащитников, нападающих и тренерского штаба */
+
+.team .goalkeepers, .team .defenders, .team .midfielders, .team .forwards {
+    overflow: hidden;
+}
+
+
+.team .goalkeeper, .team .defender, .team .midfielder, .team .forward  {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: coral;
+    border-bottom: 1px solid black;
+}
+
+
+/* Стилизация таблицы информации по игрокам всех амплуа */
+
+.info-about-players {
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.info-about-players  tr:nth-child(odd) {
+    background-color: dimgray;
+    color: #fdfbf9;
+}
+
+/* Стилизация блоков защитников, полузащитников, нападающих и тренерского штаба (цвет фона и SVG) */
+
+.team .defender {
+    background-color: #c33737;
+}
+
+.team .midfielder {
+    background-color: #c4f2b3;
+}
+
+.team .forward {
+    background-color: #d6355a;
+}
+
+
+.info-about-coach p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+    
+.goalkeeper h4::after, .goalkeeper h4::before {
+    content: url('img/SVG/team/little-goalkeeper.svg');
+    padding: 5px;
+}
+    
+.defender h4::after, .defender h4::before {
+    content: url('img/SVG/team/little-defender.svg');
+    padding: 5px;
+}
+
+.midfielder h4::after, .midfielder h4::before {
+    content: url('img/SVG/team/little-midfielder.svg');
+    padding: 5px;
+}
+    
+.forward h4::after, .forward h4::before {
+    content: url('img/SVG/team/little-forward.svg');
+    padding: 5px;
+}
+
+/* Таблица результатов*/
+
+.table-results {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.table-results tbody tr:nth-child(1), .table-results tbody tr:nth-child(2) {
+    background-color: green;
+}
+
+/* Календарь игр*/
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+}
+
+.info-about-winner-group div {
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+    border: solid 1px black;
+    background-color: green;
+    
+}
+
+.info-about-winner-group p {
+    display: inline;
+}
+
+
+/* Стилизация таблицы календаря игр*/
+
+.table-calendar tbody tr:nth-child(5) td:nth-child(3), .table-calendar tbody tr:nth-child(7) td:nth-child(3) {
+    background-color: green;
+}
+
+.table-calendar tbody tr:nth-child(5) td:nth-child(5), .table-calendar tbody tr:nth-child(7) td:nth-child(5)  {
+    background-color: red;
+}
+
+.table-calendar tbody tr:nth-child(6) td:nth-child(5), .table-calendar tbody tr:nth-child(6) td:nth-child(3), .table-calendar tbody tr:nth-child(8) td:nth-child(3), .table-calendar tbody tr:nth-child(8) td:nth-child(5)  {
+    background-color: orange;
+}
+
+/* Стилизация истории сборной*/
+
+.history h4 {
+    text-align: center;
+    font: italic bold 20px Arial;
+    text-transform: uppercase; 
+    color: #812301;
+}
+
+.history p {
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+}
+
+.history img:first-of-type {
+    width: 50%;
+    float: left;
+    margin-right: 5px;
+}
+
+.history img:last-of-type {
+    width: 50%;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Стилизация блока обзор*/
+
+.overview {
+    display: flex;
+    background-color: #ffd39f;
+    flex-direction: column;
+}
+
+.video-overview, .text-overview {
+    text-align: center;
+    padding: 2px;
+    border-bottom: 1px solid black;
+}
+
+.video-overview_header, .text-overview_header {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.text-overview {
+    overflow: scroll;
+    height: 357px;
+}
+
+.table-overview {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    vertical-align: middle;
+}
+
+.table-overview-time, .table-overview-icon, .table-overview-info {
+    border-bottom: 1px solid  #504848;
+}
+
+.table-overview-info img {
+    max-width: 100%;
+}
+
+
+/* Стилизация блока билеты*/
+
+.ticket {
+    min-height: 872px;
+    background-color: #ffcb8e;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    background-color: #deb887;
+}
+
+.tab > input {
+	display: none;
+}
+
+.tab > label {
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	background: #333;
+	color: #f7ba71;
+	margin-right: 5px;
+	border-radius: 5px 5px 0 0;
+	transition: background-color 1s;
+}
+
+.tab-content {
+	clear: both;
+}
+
+.tab-content > div {
+	background: #ffcb8e;
+    color: #000000;
+    font-family: 'Exo 2', sans-serif;
+    width: 100%;
+	position: absolute;
+	padding: 10px;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#tab-1:checked ~ .tab-content > div:nth-of-type(1) {
+	opacity: 1;
+}
+#tab-2:checked ~ .tab-content > div:nth-of-type(2) {
+	opacity: 1;
+}
+#tab-3:checked ~ .tab-content > div:nth-of-type(3) {
+	opacity: 1;
+}
+#tab-4:checked ~ .tab-content > div:nth-of-type(4) {
+	opacity: 1;
+}
+#tab-5:checked ~ .tab-content > div:nth-of-type(5) {
+	opacity: 1;
+}
+
+.tab > input:checked + label {
+	color: #333;
+	background: #fff;
+}
+
+/* Стилизация контента вкладок*/
+
+.tab-content {
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.tab-button {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #fff;
+    padding: 6px 12px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow:0 0 50px rgba(50, 200, 255, 1);
+}
+
+.tab-content-3 img {
+    display: block;
+    margin: auto;
+}
+
+.tab-content-4 iframe {
+    display: block;
+    margin: auto;
+}
+
+.tab-content-5 ul {
+    list-style-type: square
+}
+
+/* team-form */
+
+.team-form {
+    display: flex;
+    background-color: #ffcb8e;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+}
+
+.team-form_photo, .team-form_shop {
+    flex: 1 1 100px;
+}
+
+.team-form_photo {
+    position: relative;
+    padding-top: 4px;
+}
+
+.team-form_photo img {
+    width: 100%;
+}
+    
+.team-form_photo p {
+    position: absolute;
+    top: 310px;
+    left: 90px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive; 
+}
+
+
+.team-form_photo:hover p {
+    transform: scale(1.2);
+    transition: transform 1s ease-out 0.5s;
+    animation: bestform 6s ease-in;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #00ebff;
+    text-shadow: 2px 2px 3px gray;
+    box-shadow: 0 0 20px red inset
+}
+
+@keyframes bestform {
+    from {
+        color: #ff0000;
+    }
+    
+    40% {
+        color: #570101;
+    }
+    
+    80% {
+        color: #ffffff;
+    }
+    to {
+       color: #ff0000;
+    }
+}
+
+
+.team-form_shop {
+    text-align: center;
+}
+
+.team-form_shop img {
+    padding: 4px;
+}
+
+.team-form_shop ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.team-form_shop a {
+    display: block;
+    margin: auto;
+    width: 115px;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.team-form_shop a:hover {
+    background: #333;
+    color: white;
+}
+
+
+/* Footer */
+
+.feedback {
+    font-family: 'Lobster', cursive; 
+    font-size: 19px;
+    background-color: #ffcb8e;
+}
+
+.feedback-form {
+    padding: 5px;
+}
+
+.feedback p{
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+    font-size: 19px;
+    padding: 5px;
+    margin: 0;
+}
+
+.feedback-form-group, .checkbox-area {
+	overflow: hidden;
+	margin: 2px;
+}
+
+
+.feedback-form-group label, .checkbox-area label{
+	display: inline-block;
+	float: left;
+	width: 300px;
+	text-align: right;
+	cursor: pointer;
+	margin-top: 3px;
+}
+
+.feedback-form-group [type=text] {
+	display: inline-block;
+    width: 100%;
+	text-align: left;
+	float: left;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+
+.checkbox-area [type=checkbox] {
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.feedback-form-group select {
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.feedback-form-group textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.feedback-form [type=submit] {
+    display: block;
+    margin:auto;
+    margin-top: 1em;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+.feedback-form [type=submit]:hover {
+    background: #333;
+    color: white;
+}
+
+/* Footer social */
+
+.footer-middle {
+    background-color: #ffcb8e;
+}
+
+.social ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.social li {
+    display: inline-block;
+    width: 18.5%;
+    text-align: center;
+}
+
+.fa {
+    color: black;
+}
+
+@keyframes fontawesomeAround {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fontawesomeColor {
+    from {
+        color: #000000;
+    }
+    
+    20% {
+        color: #0000ff;
+    }
+    
+    40% {
+        color:#7fff00;
+    }
+    
+    60% {
+        color:#3db96d;
+    }
+    
+    80% {
+        color:#b95a3d;
+    }
+    
+    to {
+        color: #000000;
+    }
+}
+
+.fa:hover {
+    color: black;
+    transform: scale(1.3);
+    animation: fontawesomeAround 3s ease-in, fontawesomeColor 3s ease-in;
+}
+
+
+/* Footer bottom */
+
+.commercial {
+    background-color: #000;
+}
+
+
+.commercial a{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.commercial img {
+    opacity: 0.5;
+}
+
+.commercial img:hover {
+    opacity: 1;
+}
+}
+
+
+@media screen and (max-width:669px) {
+    
+/* Общее для всей страницы */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Стилизация header */
+
+header {
+    background: linear-gradient(to bottom, #fefeff 0%, #ff0000 50%, #ffffff 100%)
+}
+
+.header-top {
+    overflow: hidden;
+    height: 560px;
+    background: url('img/logo.png') 87% 100% no-repeat;
+}
+
+/* Кнопка вверх на сайте */
+
+.top-bookmarker img {
+    position: fixed;
+    right: 0.1%;
+    opacity: 0.2;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* Стилизация формы в меню */
+
+.login {
+    padding:15px 20px;
+    background: #2f2f2f;
+    border-radius: 5px;
+}
+
+.login label {
+    display: block;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.login label:first-child {
+    margin-top:0;
+}
+
+.login input[type="text"], .login input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.login input[type="text"]:focus, .login input[type="password"]:focus{
+    box-shadow:0 0 50px rgba(50, 200, 255, 0.5);
+    outline:none;
+}
+
+
+.login input[type="submit"] {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+
+/* Стилизация меню */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+
+/* Внешний вид меню */
+
+nav {
+    float: left;
+    width: 200px;
+    margin: 20px;
+}
+
+.menu a {
+    background: #2f2f2f;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: solid 1px #666;
+    transition: 0.5s all;
+}
+
+.menu a:hover {
+    background: #666;
+    padding: 10px 0 10px 20px;
+}
+
+.menu li:first-child a{
+    border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a{
+    border-radius: 0 0 3px 3px;
+}
+
+/* Всплывающее меню */
+
+.menu-list {
+    position: relative;
+}
+
+.menu-drop {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top:-9999em;
+    opacity: 0;
+    transition: 0.5s opacity;
+    border-left: 10px solid transparent;
+}
+
+.menu-list:hover .menu-drop {
+    opacity: 1;
+    top: 0;
+}
+
+/* Иконки для всплывающих менюшек */
+
+.menu-list::after {
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent #eee;
+    top: 1em;
+    right: 0.7em;
+}
+
+.menu-list:hover::after {
+    transform: scaleX(-1)
+}
+
+/* Преимущества сайта */
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ffe4c4;
+    margin: 5px 0;
+}
+
+.feature-item {
+    border-left: 1px solid #d9d9d9;
+    text-align: center;  
+}
+
+.feature-item:first-child {
+    border-left: none;
+}
+
+.feature-title {
+    color: #40352d;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    line-height: 30px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Блок новостей */
+
+.news {
+    display: flex;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+}
+
+.news-one, .news-two, .news-three {
+    flex: 1 1 100px;
+    background-color: #ffe4c4;
+}
+
+.news-one:hover, .news-two:hover, .news-three:hover {
+    flex: 1 1 100px;
+    background-color: #f7ba71;
+    cursor: pointer;
+}
+
+.news-one img, .news-two img, .news-three img {
+    width: 100%;
+}
+
+.news-one h, .news-two h, .news-three h {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+}
+
+.news-one p, .news-two p, .news-three p {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.news-one:hover span, .news-two:hover span, .news-three:hover span {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.news-one span, .news-two span, .news-three span {
+    display: none;
+} 
+
+
+
+/* Стилизация страницы сборной и тренерского штаба */
+
+.team {
+    font-size: 20px;
+    margin: 0px auto;
+    padding: 15px 30px;
+    background-color: bisque;
+    border-bottom: 1px solid black;
+}
+
+.team summary {
+    background-color: #f8d2a5;
+    font-family: 'Lobster', cursive; 
+}
+
+.team summary:hover {
+    background-color: #f7ba71;
+    transform: scale(1.006);
+    cursor: pointer;
+}
+
+
+
+/* Стилизация блоков голкиперов, защитников, полузащитников, нападающих и тренерского штаба */
+
+.team .goalkeepers, .team .defenders, .team .midfielders, .team .forwards {
+    overflow: hidden;
+}
+
+
+.team .goalkeeper, .team .defender, .team .midfielder, .team .forward  {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: coral;
+    border-bottom: 1px solid black;
+}
+
+
+/* Стилизация таблицы информации по игрокам всех амплуа */
+
+.info-about-players {
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.info-about-players  tr:nth-child(odd) {
+    background-color: dimgray;
+    color: #fdfbf9;
+}
+
+/* Стилизация блоков защитников, полузащитников, нападающих и тренерского штаба (цвет фона и без SVG) */
+
+.team .defender {
+    background-color: #c33737;
+}
+
+.team .midfielder {
+    background-color: #c4f2b3;
+}
+
+.team .forward {
+    background-color: #d6355a;
+}
+
+
+.info-about-coach p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Таблица результатов*/
+
+.table-results {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.table-results tbody tr:nth-child(1), .table-results tbody tr:nth-child(2) {
+    background-color: green;
+}
+
+/* Календарь игр*/
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+}
+
+.info-about-winner-group div {
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+    border: solid 1px black;
+    background-color: green;
+    
+}
+
+.info-about-winner-group p {
+    display: inline;
+}
+
+
+/* Стилизация таблицы календаря игр*/
+
+.table-calendar tbody tr:nth-child(5) td:nth-child(3), .table-calendar tbody tr:nth-child(7) td:nth-child(3) {
+    background-color: green;
+}
+
+.table-calendar tbody tr:nth-child(5) td:nth-child(5), .table-calendar tbody tr:nth-child(7) td:nth-child(5)  {
+    background-color: red;
+}
+
+.table-calendar tbody tr:nth-child(6) td:nth-child(5), .table-calendar tbody tr:nth-child(6) td:nth-child(3), .table-calendar tbody tr:nth-child(8) td:nth-child(3), .table-calendar tbody tr:nth-child(8) td:nth-child(5)  {
+    background-color: orange;
+}
+
+/* Стилизация истории сборной*/
+
+.history h4 {
+    text-align: center;
+    font: italic bold 20px Arial;
+    text-transform: uppercase; 
+    color: #812301;
+}
+
+.history p {
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+}
+
+.history img:first-of-type {
+    width: 50%;
+    float: left;
+    margin-right: 5px;
+}
+
+.history img:last-of-type {
+    width: 50%;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Стилизация блока обзор*/
+
+.overview {
+    display: flex;
+    background-color: #ffd39f;
+    flex-direction: column;
+}
+
+.video-overview, .text-overview {
+    text-align: center;
+    padding: 2px;
+    border-bottom: 1px solid black;
+}
+
+.video-overview_header, .text-overview_header {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.text-overview {
+    overflow: scroll;
+    height: 357px;
+}
+
+.table-overview {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    vertical-align: middle;
+}
+
+.table-overview-time, .table-overview-icon, .table-overview-info {
+    border-bottom: 1px solid  #504848;
+}
+
+.table-overview-info img {
+    max-width: 100%;
+}
+
+
+/* Стилизация блока билеты*/
+
+.ticket {
+    min-height: 1308px;
+    background-color: #ffcb8e;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    background-color: #deb887;
+}
+
+.tab > input {
+	display: none;
+}
+
+.tab > label {
+	cursor: pointer;
+	display: block;
+	padding: 5px 10px;
+	background: #333;
+	color: #f7ba71;
+	border-radius: 5px 5px 0 0;
+	transition: background-color 1s;
+    text-align: center;
+}
+
+.tab-content {
+	clear: both;
+}
+    
+.tab-content img {
+    width: 100%;
+}
+    
+.tab-content iframe {
+    width: 100%;
+}
+    
+
+.tab-content > div {
+	background: #ffcb8e;
+    color: #000000;
+    font-family: 'Exo 2', sans-serif;
+    width: 100%;
+	position: absolute;
+	padding: 10px;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#tab-1:checked ~ .tab-content > div:nth-of-type(1) {
+	opacity: 1;
+}
+#tab-2:checked ~ .tab-content > div:nth-of-type(2) {
+	opacity: 1;
+}
+#tab-3:checked ~ .tab-content > div:nth-of-type(3) {
+	opacity: 1;
+}
+#tab-4:checked ~ .tab-content > div:nth-of-type(4) {
+	opacity: 1;
+}
+#tab-5:checked ~ .tab-content > div:nth-of-type(5) {
+	opacity: 1;
+}
+
+.tab > input:checked + label {
+	color: #333;
+	background: #fff;
+}
+
+/* Стилизация контента вкладок*/
+
+.tab-content {
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.tab-button {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #fff;
+    padding: 6px 12px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow:0 0 50px rgba(50, 200, 255, 1);
+}
+
+.tab-content-3 img {
+    display: block;
+    margin: auto;
+}
+
+.tab-content-4 iframe {
+    display: block;
+    margin: auto;
+}
+
+.tab-content-5 ul {
+    list-style-type: square
+}
+
+/* team-form */
+
+.team-form {
+    display: flex;
+    background-color: #ffcb8e;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+}
+
+.team-form_photo, .team-form_shop {
+    flex: 1 1 100px;
+}
+
+.team-form_photo {
+    position: relative;
+    padding-top: 4px;
+}
+
+.team-form_photo img {
+    width: 100%;
+}
+    
+.team-form_photo p {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive; 
+}
+
+
+.team-form_photo:hover p {
+    transform: scale(1.2);
+    transition: transform 1s ease-out 0.5s;
+    animation: bestform 6s ease-in;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #00ebff;
+    text-shadow: 2px 2px 3px gray;
+    box-shadow: 0 0 20px red inset
+}
+
+@keyframes bestform {
+    from {
+        color: #ff0000;
+    }
+    
+    40% {
+        color: #570101;
+    }
+    
+    80% {
+        color: #ffffff;
+    }
+    to {
+       color: #ff0000;
+    }
+}
+
+
+.team-form_shop {
+    text-align: center;
+}
+
+.team-form_shop img {
+    padding: 4px;
+}
+
+.team-form_shop ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.team-form_shop a {
+    display: block;
+    margin: auto;
+    width: 115px;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.team-form_shop a:hover {
+    background: #333;
+    color: white;
+}
+
+
+/* Footer */
+
+.feedback {
+    font-family: 'Lobster', cursive; 
+    font-size: 19px;
+    background-color: #ffcb8e;
+}
+
+.feedback-form {
+    padding: 5px;
+}
+
+.feedback p{
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+    font-size: 19px;
+    padding: 5px;
+    margin: 0;
+}
+
+.feedback-form-group, .checkbox-area {
+	overflow: hidden;
+	margin: 2px;
+}
+
+
+.feedback-form-group label, .checkbox-area label{
+	display: inline-block;
+	float: left;
+	width: 300px;
+	text-align: right;
+	cursor: pointer;
+	margin-top: 3px;
+}
+
+.feedback-form-group [type=text] {
+	display: inline-block;
+    width: 100%;
+	text-align: left;
+	float: left;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+
+.checkbox-area [type=checkbox] {
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.feedback-form-group select {
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.feedback-form-group textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.feedback-form [type=submit] {
+    display: block;
+    margin:auto;
+    margin-top: 1em;
+    padding: 5px 15px;  
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+.feedback-form [type=submit]:hover {
+    background: #333;
+    color: white;
+}
+
+/* Footer social */
+
+.footer-middle {
+    background-color: #ffcb8e;
+}
+
+.social ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.social li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.fa {
+    color: black;
+}
+
+@keyframes fontawesomeAround {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fontawesomeColor {
+    from {
+        color: #000000;
+    }
+    
+    20% {
+        color: #0000ff;
+    }
+    
+    40% {
+        color:#7fff00;
+    }
+    
+    60% {
+        color:#3db96d;
+    }
+    
+    80% {
+        color:#b95a3d;
+    }
+    
+    to {
+        color: #000000;
+    }
+}
+
+.fa:hover {
+    color: black;
+    transform: scale(1.3);
+    animation: fontawesomeAround 3s ease-in, fontawesomeColor 3s ease-in;
+}
+
+
+/* Footer bottom */
+
+.commercial {
+    background-color: #000;
+}
+
+
+.commercial a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.commercial img {
+    opacity: 0.5;
+}
+
+.commercial img:hover {
+    opacity: 1;
+}
+}
+
